@@ -101,7 +101,7 @@ Oracle VirtualBox was installed on the host machine to create and manage virtual
 - Reviewed the virtual machine management interface.
 - Prepared the environment for importing Kali Linux.
 
-**Evidence:** `screenshots/01-virtualbox-dashboard.png`
+**Evidence:** ![VirtualBox Dashboard](screenshots/01-virtualbox-dashboard.png)
 
 ### Step 2: Importing Kali Linux Virtual Machine
 
@@ -117,7 +117,7 @@ The virtual machine configuration was reviewed, including memory allocation, pro
 - Reviewed the virtual machine settings.
 - Started Kali Linux and verified successful booting.
 
-**Evidence:** `screenshots/02-kali-linux-desktop.png`
+**Evidence:** ![Kali Linux Desktop](screenshots/02-kali-linux-desktop.png)
 
 ### Step 3: Creating a VirtualBox NAT Network
 
@@ -134,7 +134,7 @@ A dedicated NAT Network was created using VirtualBox Network Manager.
 
 A NAT Network was selected because it allows multiple virtual machines connected to the same network to communicate with each other while providing outbound network connectivity.
 
-**Evidence:** `screenshots/03-nat-network-configuration.png`
+**Evidence:** ![NAT Network Configuration](screenshots/03-nat-network-configuration.png)
 
 ### Step 4: Configuring Kali Linux Network Adapter
 
@@ -152,7 +152,7 @@ The Kali Linux virtual machine's network adapter was configured to connect to th
 
 This configuration establishes the virtual network connection between Kali Linux and the VirtualBox NAT Network.
 
-**Evidence:** `screenshots/04-kali-network-adapter.png`
+**Evidence:** ![Kali Network Adapter](screenshots/04-kali-network-adapter.png)
 
 ### Step 5: Kali Linux Network Configuration and Inspection
 
@@ -183,7 +183,7 @@ These commands were used to inspect:
 | Default Gateway | 10.0.0.1 |
 | DNS Server | 8.8.8.8|
 
-**Evidence:** `screenshots/05-ip-address-configuration.png`
+**Evidence:** ![IP Address Configuration](screenshots/05-ip-address-configuration.png)
 
 ### Step 6: Network Connectivity Testing
 
@@ -240,7 +240,8 @@ Purpose: Verify that domain names can be resolved through DNS.
 
 **Result:** All reported connectivity tests completed successfully.
 
-**Evidence:** `screenshots/06-network-connectivity-test.png`
+**Evidence:** ![Network Connectivity Test](screenshots/06-network-connectivity-test.png)
+              ![DNS Resolution Test](screenshots/07-dns resolution verify.png)
 
 ### Step 7: VirtualBox Shared Folder Configuration
 
@@ -257,7 +258,7 @@ A shared folder was configured to enable file exchange between the host operatin
 
 The shared-folder feature provides a convenient way to transfer scripts, configuration files, and other lab resources between the host and guest operating systems.
 
-**Evidence:** `screenshots/07-shared-folder-configuration.png`
+**Evidence:** ![Shared Folder Configuration](screenshots/08-shared-folder-configuration.png)
 
 ### Step 8: Creating a Virtual Machine Snapshot
 
@@ -272,7 +273,7 @@ A virtual machine snapshot was created after completing the initial lab configur
 - Allows experimentation without losing the baseline configuration.
 - Supports safer testing and troubleshooting.
 
-**Evidence:** `screenshots/08-vm-snapshot.png`
+**Evidence:** ![VM Snapshot](screenshots/09-vm-snapshot.png)
 
 ## 🔎 Lab Verification
 
