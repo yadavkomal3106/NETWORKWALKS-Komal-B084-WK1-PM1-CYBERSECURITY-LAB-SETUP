@@ -38,7 +38,7 @@ It can be used for:
 - Network traffic analysis
 - Web application security testing
 - Penetration-testing practice
-- Security-tool experimentation etc.
+- Security-tool experimentation 
 
 
 ## 🏗️ Lab Architecture
@@ -49,22 +49,21 @@ The Kali Linux VM is connected to a dedicated NAT Network configured through Vir
 
 ### Network Topology
 
-
-          Host Operating System
-                   |
-             VirtualBox
-                   |
-             NAT Network
-                   |
-            10.0.0.0/24
-                   |
-             Kali Linux VM
-                   |
-             10.0.0.2
-                   |
-          Virtual Network Gateway
-                   |
-             External Network
+Windows 11 Host
+      |
+Oracle VirtualBox
+      |
+VirtualBox NAT Network
+      |
+  10.0.0.0/24
+      |
+ Kali Linux VM
+      |
+   10.0.0.2
+      |
+ Gateway: 10.0.0.1
+      |
+ External Network
 
 
 The NAT Network allows multiple connected virtual machines to communicate with one another while providing outbound network connectivity through network address translation.
@@ -166,7 +165,7 @@ After starting Kali Linux, the network interface configuration was inspected usi
 ip addr show
 ip link show
 ip route
-
+```
 
 These commands were used to inspect:
 
@@ -236,7 +235,7 @@ Purpose: Verify that domain names can be resolved through DNS.
 | Test | Command | Status |
 |---|---|---|
 | IP Address Inspection | `ip addr show` | Successful |
-| Gateway Connectivity | `ping -c 4 <gateway-ip>` | Successful |
+| Gateway Connectivity | `ping -c 4 10.0.0.1` | Successful |
 | External IP Connectivity | `ping -c 4 8.8.8.8` | Successful |
 | DNS Resolution | `getent hosts google.com` | Successful |
 
@@ -254,7 +253,7 @@ A shared folder was configured to enable file exchange between the host operatin
 - Added the folder through VirtualBox Shared Folders settings.
 - Configured the shared-folder options.
 - Enabled persistent configuration using Make Permanent.
-- Configured automatic mounting if enabled.
+- Auto Mount - Enabled.
 - Checked the shared-folder access from Kali Linux.
 
 The shared-folder feature provides a convenient way to transfer scripts, configuration files, and other lab resources between the host and guest operating systems.
@@ -265,7 +264,7 @@ The shared-folder feature provides a convenient way to transfer scripts, configu
 
 A virtual machine snapshot was created after completing the initial lab configuration.
 
-**Snapshot Status:** Created
+**Snapshot Status:** Created *After Configuration*
 
 **Purpose:**
 
