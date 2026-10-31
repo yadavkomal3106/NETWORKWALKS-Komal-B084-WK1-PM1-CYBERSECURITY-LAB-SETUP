@@ -241,7 +241,7 @@ Purpose: Verify that domain names can be resolved through DNS.
 **Result:** All reported connectivity tests completed successfully.
 
 **Evidence:** ![Network Connectivity Test](screenshots/06-network-connectivity-test.png)
-              ![DNS Resolution Test](screenshots/07-dns resolution verify.png)
+              ![DNS Resolution Test](screenshots/07-dns-resolution-verify.png)
 
 ### Step 7: VirtualBox Shared Folder Configuration
 
