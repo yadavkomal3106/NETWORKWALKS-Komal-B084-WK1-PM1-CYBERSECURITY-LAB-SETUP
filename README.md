@@ -336,13 +336,8 @@ All scanning, vulnerability assessment, and penetration-testing activities must 
 
 ---
 
-Author 
-
+Made by :
 KOMAL
-
 LinkedIn : https://www.linkedin.com/in/komal-7a9928319/
-
 **Project:** Kali Linux Virtual Cybersecurity Lab Setup
-**Internship:** Cybersecurity Internship at Networkwalks
-**Week:** 01
 **Focus Areas:** Virtualization | Kali Linux | Linux Networking | NAT Networking | Shared Folders | Connectivity Testing
