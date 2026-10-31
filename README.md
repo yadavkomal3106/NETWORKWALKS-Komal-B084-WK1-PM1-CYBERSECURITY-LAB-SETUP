@@ -47,24 +47,23 @@ The laboratory consists of a host operating system running Oracle VirtualBox, wi
 
 The Kali Linux VM is connected to a dedicated NAT Network configured through VirtualBox.
 
-### Network Topology
+Network Topology
 
-Windows 11 Host
-      |
-Oracle VirtualBox
-      |
-VirtualBox NAT Network
-      |
-  10.0.0.0/24
-      |
- Kali Linux VM
-      |
-   10.0.0.2
-      |
- Gateway: 10.0.0.1
-      |
- External Network
-
+          Windows 11 Host
+                 |
+          Oracle VirtualBox
+                 |
+        VirtualBox NAT Network
+                 |
+            10.0.0.0/24
+                 |
+           Kali Linux VM
+                 |
+             10.0.0.2
+                 |
+        Gateway: 10.0.0.1
+                 |
+          External Network
 
 The NAT Network allows multiple connected virtual machines to communicate with one another while providing outbound network connectivity through network address translation.
 
